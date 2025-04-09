@@ -11,6 +11,9 @@ This project is a simple implementation of a neural network from scratch using *
 - No external ML libraries — just **NumPy**
 - Evaluates accuracy on a development set
 - Easy to customize and extend
+- Visualize predictions on sample images
+- Save and load model weights
+- Add loss plotting
 
 ---
 
@@ -28,10 +31,16 @@ Download the `train.csv` from the [Kaggle Digit Recognizer competition](https://
    cd mnist-numpy-classifier
    ```
 
-2. Run the notebook:
+2. (Optional) Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install numpy pandas matplotlib
+   ```
+
+3. Run the notebook:
    - Open `main.ipynb` in Jupyter Notebook or Jupyter Lab.
    - Run all cells to train the model and evaluate accuracy.
-
 
 ---
 
@@ -54,9 +63,32 @@ Dev Set Accuracy: 0.87
 
 ---
 
-## 📌 Todo (for extensions)
+## 📈 Extra Features
 
-- [ ] Add a test set evaluation
-- [ ] Visualize predictions on sample images
-- [ ] Save and load model weights
-- [ ] Add loss plotting
+### 👀 Visualize Predictions on Sample Images
+```python
+show_sample_predictions(X_dev, Y_dev, W1, b1, W2, b2)
+```
+
+### 📃 Save and Load Model Weights
+```python
+save_weights(W1, b1, W2, b2)
+W1, b1, W2, b2 = load_weights()
+```
+
+### 📉 Plot Training Loss
+```python
+plt.plot(losses)
+plt.title("Training Loss")
+plt.xlabel("Iteration")
+plt.ylabel("Loss")
+plt.grid(True)
+plt.show()
+```
+
+---
+
+## 📚 Credits
+
+Made with ❤️ using only NumPy. Inspired by classic ML tutorials and the Kaggle MNIST challenge.
+
