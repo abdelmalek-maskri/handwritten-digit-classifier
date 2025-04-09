@@ -28,14 +28,7 @@ Download the `train.csv` from the [Kaggle Digit Recognizer competition](https://
    cd mnist-numpy-classifier
    ```
 
-2. (Optional) Create a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install numpy pandas matplotlib
-   ```
-
-3. Run the notebook:
+2. Run the notebook:
    - Open `main.ipynb` in Jupyter Notebook or Jupyter Lab.
    - Run all cells to train the model and evaluate accuracy.
 
