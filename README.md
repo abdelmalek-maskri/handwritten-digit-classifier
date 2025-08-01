@@ -86,9 +86,3 @@ plt.grid(True)
 plt.show()
 ```
 
----
-
-## 📚 Credits
-
-Made with ❤️ using only NumPy. Inspired by classic ML tutorials and the Kaggle MNIST challenge.
-
