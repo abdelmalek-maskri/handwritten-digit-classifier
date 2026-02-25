@@ -1,10 +1,10 @@
-# 🧠 MNIST Handwritten Digit Classifier (NumPy)
+# MNIST Handwritten Digit Classifier (NumPy)
 
 This project is a simple implementation of a neural network from scratch using **NumPy**, trained to recognize handwritten digits from the [MNIST dataset](https://www.kaggle.com/competitions/digit-recognizer).
 
 ---
 
-## 🔧 Features
+## Features
 
 - Two-layer neural network (ReLU + Softmax)
 - Trained using gradient descent
@@ -17,13 +17,13 @@ This project is a simple implementation of a neural network from scratch using *
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 Download the `train.csv` from the [Kaggle Digit Recognizer competition](https://www.kaggle.com/competitions/digit-recognizer/data) and place it in the project root or update the path in the code.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repo or download the code:
    ```bash
@@ -44,7 +44,7 @@ Download the `train.csv` from the [Kaggle Digit Recognizer competition](https://
 
 ---
 
-## 🧪 Model Architecture
+## Model Architecture
 
 - **Input Layer**: 784 nodes (28x28 pixels)
 - **Hidden Layer**: 64 nodes with ReLU
@@ -52,7 +52,7 @@ Download the `train.csv` from the [Kaggle Digit Recognizer competition](https://
 
 ---
 
-## 📊 Sample Output
+## Sample Output
 
 ```
 Iteration 0 - Training Accuracy: 0.11
@@ -63,20 +63,20 @@ Dev Set Accuracy: 0.87
 
 ---
 
-## 📈 Extra Features
+## Extra Features
 
 ### 👀 Visualize Predictions on Sample Images
 ```python
 show_sample_predictions(X_dev, Y_dev, W1, b1, W2, b2)
 ```
 
-### 📃 Save and Load Model Weights
+### Save and Load Model Weights
 ```python
 save_weights(W1, b1, W2, b2)
 W1, b1, W2, b2 = load_weights()
 ```
 
-### 📉 Plot Training Loss
+### Plot Training Loss
 ```python
 plt.plot(losses)
 plt.title("Training Loss")
